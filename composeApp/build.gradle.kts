@@ -54,6 +54,8 @@ kotlin {
             implementation(libs.haze.materials)
             implementation(libs.haze)
 
+
+
             implementation(libs.ktor.client.core)
             implementation(libs.ktor.client.content.negotiation)
             implementation(libs.ktor.serialization.kotlinx.json)
@@ -62,11 +64,20 @@ kotlin {
             implementation(libs.koin.core)
             implementation(libs.voyager.navigator)
             implementation(libs.voyager.koin)
+
+            implementation("io.ktor:ktor-client-core:2.3.7")
+            implementation("io.ktor:ktor-client-cio:2.3.7")  // Add this
+            implementation("io.ktor:ktor-client-content-negotiation:2.3.7")
+            implementation("io.ktor:ktor-serialization-kotlinx-json:2.3.7")
+            implementation("org.jetbrains.kotlinx:kotlinx-coroutines-swing:1.7.3")
         }
         desktopMain.dependencies {
+            implementation("io.ktor:ktor-client-cio:2.3.7")
             implementation(compose.desktop.currentOs)
             implementation(libs.webcam.capture)
             implementation(libs.webcam.capture.driver.opencv)
+            implementation("org.jetbrains.kotlinx:kotlinx-coroutines-swing:1.7.3")
+
         }
     }
 }

@@ -1,3 +1,5 @@
+package screens
+
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -12,7 +14,6 @@ import cameraai.composeapp.generated.resources.Res
 import cameraai.composeapp.generated.resources.camera_slash
 import dev.chrisbanes.haze.HazeState
 import org.jetbrains.compose.resources.painterResource
-
 
 @Composable
 expect fun CameraView(
