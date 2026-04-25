@@ -126,7 +126,7 @@ compose.desktop {
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "za.co.southerndevz.cameraai"
+            packageName = "OA Library Scanner"
             packageVersion = "1.0.0"
         }
     }
